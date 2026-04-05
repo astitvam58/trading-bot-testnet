@@ -1,0 +1,27 @@
+2024-01-15 14:30:22 - trading_bot - INFO - Market order request - Symbol: BTCUSDT, Side: BUY, Quantity: 0.01
+2024-01-15 14:30:22 - trading_bot - DEBUG - Request: POST /fapi/v1/order with params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.01', 'timestamp': 1705325422000}
+2024-01-15 14:30:22 - trading_bot - DEBUG - Response status: 200
+2024-01-15 14:30:23 - trading_bot - DEBUG - Response body: {
+  "orderId": 1234567890,
+  "symbol": "BTCUSDT",
+  "status": "FILLED",
+  "clientOrderId": "web_1234567890123",
+  "price": "0",
+  "avgPrice": "42500.50",
+  "origQty": "0.01",
+  "executedQty": "0.01",
+  "cumQuote": "425.0050",
+  "timeInForce": "IOC",
+  "type": "MARKET",
+  "reduceOnly": false,
+  "side": "BUY",
+  "positionSide": "LONG",
+  "stopPrice": "0",
+  "workingType": "CONTRACT_PRICE",
+  "priceProtect": false,
+  "origType": "MARKET",
+  "updateTime": 1705325423000
+}
+2024-01-15 14:30:23 - trading_bot - INFO - Placing MARKET order: BUY 0.01 BTCUSDT
+2024-01-15 14:30:23 - trading_bot - INFO - Market order placed successfully: {'orderId': 1234567890, 'symbol': 'BTCUSDT', 'status': 'FILLED', 'executedQty': '0.01', 'avgPrice': '42500.50', 'cumQuote': '425.0050'}
+2024-01-15 14:30:24 - trading_bot - INFO - Market order placed successfully - Order ID: 1234567890
